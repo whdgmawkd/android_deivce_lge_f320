@@ -35,4 +35,4 @@ PRODUCT_PACKAGES += \
 
 # NFC config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-bcrm.conf:system/etc/libnfc-brcm.conf
+    $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
