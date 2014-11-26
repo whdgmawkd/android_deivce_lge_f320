@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2011 The Android Open-Source Project
+# Copyright (C) 2013 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,21 +14,11 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/lge/d802/d802-vendor.mk)
-$(call inherit-product, device/lge/g2-common/g2.mk)
+include device/lge/g2-common/BoardConfigCommon.mk
 
-## overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+TARGET_KERNEL_CONFIG := f320_defconfig
 
+TARGET_OTA_ASSERT_DEVICE := d802,g2,galbi,d800,f320
 
-PRODUCT_PROPERTY_OVERRIDES += \
-	telephony.lteOnGsmDevice=1 \
-	ro.telephony.default_network=9
+G2_DTS_TARGET := msm8974-g2-open_com
 
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
-
-# NFC packages
-PRODUCT_PACKAGES += \
-    nfc_nci.bcm2079x.default \
-    NfcNci
