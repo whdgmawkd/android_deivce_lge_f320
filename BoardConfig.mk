@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
-include device/lge/g2-common/BoardConfigCommon.mk
+include device/lge/g2kr-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := f320a_defconfig
+TARGET_KERNEL_CONFIG := f320_defconfig
 # TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 
 TARGET_OTA_ASSERT_DEVICE := d802,g2,galbi,d800,f320,f320k,f320s,f320l
