@@ -14,11 +14,11 @@
 # limitations under the License.
 #
 
-include device/lge/g2-common/BoardConfigCommon.mk
+include device/lge/g2kr-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := cyanogenmod_d802_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_f320_defconfig
 
-TARGET_OTA_ASSERT_DEVICE := d802,g2,galbi,d800
+TARGET_OTA_ASSERT_DEVICE := g2,galbi,f320,f320s,f320k,f320l
 
-G2_DTS_TARGET := msm8974-g2-open_com
+G2_DTS_TARGET := msm8974-g2-kr
 
